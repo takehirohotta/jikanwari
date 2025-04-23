@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>履修科目</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .timetable {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .row {
+            display: flex;
+            flex: 1;
+        }
+        .cell {
+            flex: 1;
+            border: 1px solid #ddd;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .header {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .time {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            white-space: nowrap;
+            padding: 10px 0;
+        }
+        .course { margin-bottom: 5px; }
+        .teacher { font-size: 0.9em; color: #666; }
+        .classroom { font-size: 0.8em; color: #888; }
+        .text-combine {
+            -webkit-text-combine: horizontal;
+            -ms-text-combine-horizontal: all;
+            text-combine-upright: all;
+        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="timetable">
+        <div class="row">
+            <div class="cell header"></div>
+            <div class="cell header">月曜日</div>
+            <div class="cell header">火曜日</div>
+            <div class="cell header">水曜日</div>
+            <div class="cell header">木曜日</div>
+            <div class="cell header">金曜日</div>
+        </div>
+        <div class="row">
+            <div class="cell header">
+                <div class="time">
+                    1限目<span class="text-combine">9</span>：<span class="text-combine">00</span>～<span class="text-combine">10</span>：<span class="text-combine">45</span>
+                </div>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell">
+                <div class="course">
+                    <a href="https://moodle2025.mc2.osakac.ac.jp/2025/course/view.php?id=1701" target="_blank" rel="noopener noreferrer">自然言語処理特論</a></div>
+                    <div class="teacher">竹内　和広</div>
+                    <div class="classroom">前期 金曜1限　遠隔</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell header">
+                <div class="time">
+                    ２限目<span class="text-combine">10</span>：<span class="text-combine">55</span>～<span class="text-combine">12</span>：<span class="text-combine">40</span>
+                </div>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell">
+                <div class="course"><a href="https://moodle2025.mc2.osakac.ac.jp/2025/course/view.php?id=646" target="_blank" rel="noopener noreferrer">(TA)コンピュータ基礎演習</a></div>
+                <div class="teacher">岩本　祐太郎</div>
+                <div class="classroom">J305</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell header">
+                <div class="time">
+                    ３限目<span class="text-combine">13</span>：<span class="text-combine">25</span>～<span class="text-combine">15</span>：<span class="text-combine">10</span>
+                </div>
+            </div>
+            <div class="cell"></div>
+            <div class="cell">4ゼミ</div>
+            <div class="cell">
+                <div class="course"><a href="https://moodle2025.mc2.osakac.ac.jp/2025/course/view.php?id=677" target="_blank" rel="noopener noreferrer">(TA)情報工学基礎実験2</a></div>
+                <div class="teacher">阿部　昇、江原　康生 ほか</div>
+                <div class="classroom">前期 水曜3，4限Y号館2階</div>
+            </div>
+            <div class="cell"></div>
+            <div class="cell">
+                <div class="course"><a href="https://moodle2025.mc2.osakac.ac.jp/2025/course/view.php?id=646" target="_blank" rel="noopener noreferrer">(TA)コンピュータ基礎演習</a></div>
+                <div class="teacher">岩本　祐太郎</div>
+                <div class="classroom">J305</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell header">
+                <div class="time">
+                    ４限目<span class="text-combine">15</span>：<span class="text-combine">20</span>～<span class="text-combine">17</span>：<span class="text-combine">05</span>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="course"><a href="https://moodle2025.mc2.osakac.ac.jp/2025/course/view.php?id=1697" target="_blank" rel="noopener noreferrer">○ ゼミナール3</a></div>
+                <div class="teacher">古崎　晃司、越後　富夫 ほか</div>
+                <div class="classroom">前期 月曜4限 J508</div>
+            </div>
+            <div class="cell">
+                <div class="course"><a href="https://moodle2025.mc2.osakac.ac.jp/2025/course/view.php?id=1695" target="_blank" rel="noopener noreferrer">知能情報処理特論</a></div>
+                <div class="teacher">間下　以大</div>
+                <div class="classroom">前期 火曜4限 J401</div>
+            </div>
+            <div class="cell">
+                <div class="course"><a href="https://moodle2025.mc2.osakac.ac.jp/2025/course/view.php?id=677" target="_blank" rel="noopener noreferrer">(TA)情報工学基礎実験2</a></div>
+                <div class="teacher">阿部　昇、江原　康生 ほか</div>
+                <div class="classroom">後期 水曜3，4限Y号館2階</div>
+            </div>
+            <div class="cell">
+                <div class="course">ゼミ</div>
+            </div>
+            <div class="cell">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
